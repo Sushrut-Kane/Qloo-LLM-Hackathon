@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
+<<<<<<< HEAD
 import { useAuth } from '../contexts/AuthContext';
+=======
+>>>>>>> 33e070a015a1d0dee5a0c00d0a0250bfaed28fe0
 import { 
   Zap, 
   Search, 
@@ -11,14 +14,21 @@ import {
   Trophy, 
   User,
   Menu,
+<<<<<<< HEAD
   X,
   LogOut
+=======
+  X
+>>>>>>> 33e070a015a1d0dee5a0c00d0a0250bfaed28fe0
 } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+<<<<<<< HEAD
   const { user, profile, signOut } = useAuth();
+=======
+>>>>>>> 33e070a015a1d0dee5a0c00d0a0250bfaed28fe0
 
   const navItems = [
     { path: '/dashboard', icon: Zap, label: 'Dashboard' },
@@ -30,6 +40,7 @@ const Navbar = () => {
     { path: '/profile', icon: User, label: 'Profile' },
   ];
 
+<<<<<<< HEAD
   const handleSignOut = async () => {
     try {
       await signOut();
@@ -38,6 +49,8 @@ const Navbar = () => {
     }
   };
 
+=======
+>>>>>>> 33e070a015a1d0dee5a0c00d0a0250bfaed28fe0
   return (
     <motion.nav
       initial={{ y: -100 }}
@@ -60,8 +73,12 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
+<<<<<<< HEAD
           <div className="hidden md:flex items-center space-x-4">
             <div className="flex items-center space-x-1">
+=======
+          <div className="hidden md:flex items-center space-x-1">
+>>>>>>> 33e070a015a1d0dee5a0c00d0a0250bfaed28fe0
             {navItems.map((item) => {
               const Icon = item.icon;
               const isActive = location.pathname === item.path;
@@ -83,6 +100,7 @@ const Navbar = () => {
                 </Link>
               );
             })}
+<<<<<<< HEAD
             </div>
             
             {/* User Menu */}
@@ -114,6 +132,8 @@ const Navbar = () => {
                 </motion.button>
               </div>
             )}
+=======
+>>>>>>> 33e070a015a1d0dee5a0c00d0a0250bfaed28fe0
           </div>
 
           {/* Mobile menu button */}
@@ -155,6 +175,7 @@ const Navbar = () => {
                 </Link>
               );
             })}
+<<<<<<< HEAD
             
             {/* Mobile Sign Out */}
             {user && (
@@ -166,6 +187,8 @@ const Navbar = () => {
                 <span className="font-medium">Sign Out</span>
               </button>
             )}
+=======
+>>>>>>> 33e070a015a1d0dee5a0c00d0a0250bfaed28fe0
           </div>
         </motion.div>
       )}
