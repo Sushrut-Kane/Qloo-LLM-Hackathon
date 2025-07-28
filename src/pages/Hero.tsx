@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { 
-  Zap, 
-  Users, 
-  Lightbulb, 
-  Code, 
+import {
+  Zap,
+  Users,
+  Lightbulb,
+  Code,
   ArrowRight,
   Sparkles,
   Brain,
@@ -51,7 +51,7 @@ const Hero = () => {
               <Sparkles className="w-4 h-4 text-purple-400" />
               <span className="text-sm text-purple-300">Powered by AI & Cultural Intelligence</span>
             </div>
-            
+
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
               <span className="bg-gradient-to-r from-white via-purple-200 to-cyan-200 bg-clip-text text-transparent">
                 Build the Future
@@ -61,9 +61,9 @@ const Hero = () => {
                 Together
               </span>
             </h1>
-            
+
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed">
-              The ultimate platform for hackers to discover perfect hackathons, find compatible teammates, 
+              The ultimate platform for hackers to discover perfect hackathons, find compatible teammates,
               and build amazing projects with AI-powered collaboration tools.
             </p>
           </motion.div>
@@ -74,7 +74,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
           >
-            <Link to="/dashboard">
+            <Link to="/form">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -84,7 +84,8 @@ const Hero = () => {
                 <ArrowRight className="w-5 h-5" />
               </motion.button>
             </Link>
-            
+
+
             <Link to="/discovery">
               <motion.button
                 whileHover={{ scale: 1.05 }}
